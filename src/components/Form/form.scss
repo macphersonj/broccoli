@@ -1,0 +1,75 @@
+@import "../../styles/mixins";
+
+label,
+input {
+  margin: 0;
+  display: block;
+  font-size: 1.2rem;
+  transition: 0.5s ease font-size;
+}
+
+.c-input {
+  margin: 20px 0 10px 0;
+  width: 100%;
+  border: 0;
+  border: 1px solid #efefef;
+  font-weight: 400;
+  padding: 10px 15px;
+  display: block;
+  outline: 0;
+  font-size: 0.8rem;
+  border-radius: 30px;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.c-formheader {
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+  padding: 0 0 20px 0;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 3px;
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  }
+}
+
+.c-form-submit,
+.c-close-modal {
+  display: block;
+  width: 100%;
+  margin: 50px 0 20px 0;
+
+  @include btn-hover(#7f53ac, #fff);
+}
+
+.c-input-focus {
+  background: red;
+}
+
+// label:focus-within {
+//   font-size: 0.7rem;
+// }
+
+label {
+  font-weight: bold;
+  margin: 50px 0 0 0;
+}
+
+.c-form-error {
+  color: red;
+  font-size: 0.8rem;
+  text-align: left;
+  display: block;
+}

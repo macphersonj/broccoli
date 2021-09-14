@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+
+*,
+html {
+  font-size: 16px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+@import "colours.scss";
+@import "layout.scss";
+@import "mixins.scss";
+
+body {
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
