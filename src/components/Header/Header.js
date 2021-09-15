@@ -4,10 +4,10 @@ import logo from "../../assets/images/broccoli-co.svg";
 
 const Header = () => {
   return (
-    <div className="c-header">
+    <div data-testid="header" className="c-header">
       <div className="l-container">
         <div className="c-logo">
-          <img src={logo} alt="Broccoli&Co" />
+          <img data-testid="logo" src={logo} alt="Broccoli&Co" />
         </div>
       </div>
     </div>
